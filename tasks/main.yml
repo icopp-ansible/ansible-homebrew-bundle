@@ -1,0 +1,6 @@
+---
+- name: Install Brew Bundle via Homebrew
+  homebrew_tap:
+    name: Homebrew/bundle
+    state: present
+  when: ansible_os_family == "Darwin"
